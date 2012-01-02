@@ -10,6 +10,7 @@ class FacebookConnection
           if resp.success
             user = new root.User(resp.result)
             user.welcome()
+            # root.Window1.window.remove(root.FacebookConnnection.loginButton())
         )
       else if event.error
         alert(event.error)

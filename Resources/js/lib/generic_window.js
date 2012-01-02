@@ -10,7 +10,6 @@
         title: theTitle,
         background: '#fff'
       });
-      this.custom = "Some random Value";
       label = Ti.UI.createLabel({
         color: '#999',
         text: theText,
@@ -22,9 +21,6 @@
         width: 'auto'
       });
       this.window.add(label);
-      this.window.addEventListener("click", function() {
-        return alert(self.custom);
-      });
     }
 
     return GenericWindow;

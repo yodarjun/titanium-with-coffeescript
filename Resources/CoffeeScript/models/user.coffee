@@ -4,7 +4,7 @@ class User
     @name = attributes["name"]
 
   welcome: () ->
-    alert("welcome " + @name)
+    alert("Welcome to Crowdtap Challenges " + @name)
     return true
 
 root.User = User

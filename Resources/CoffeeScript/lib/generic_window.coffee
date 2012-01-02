@@ -2,7 +2,7 @@ class GenericWindow
   constructor: (theTitle, theText) ->
     self    = this
     @window = Ti.UI.createWindow({title: theTitle, background: '#fff'})
-    @custom = "Some random Value"
+    # @custom = "Some random text"
     label   = Ti.UI.createLabel({
       color: '#999',
       text:  theText,
@@ -14,8 +14,8 @@ class GenericWindow
       width: 'auto'
     })
     @window.add(label)
-    @window.addEventListener("click", () ->
-      alert(self.custom)
-    )
+    # @window.addEventListener("click", () ->
+    #   alert(self.custom)
+    # )
 
 root.GenericWindow = GenericWindow

@@ -10,7 +10,7 @@
     }
 
     User.prototype.welcome = function() {
-      alert("welcome " + this.name);
+      alert("Welcome to Crowdtap Challenges " + this.name);
       return true;
     };
 
